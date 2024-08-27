@@ -3,41 +3,47 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply dark:bg-[#17181c] bg-[#ede4da];
-    @apply dark:text-[#ede4da] text-[#17181c];
-  }
+	body {
+		@apply dark:bg-[#17181c] bg-[#ede4da];
+		@apply dark:text-[#ede4da] text-[#17181c];
+	}
 }
 
 @font-face {
-  font-family: 'Keleti';
-  src: url('/fonts/Keleti-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Keleti";
+	src: url("/fonts/Keleti-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-  overflow-x: hidden;
-  min-height: 100vh;
+	overflow-x: hidden;
+	min-height: 100vh;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 .container {
-  max-width: 1280px;
-  padding: 0 18px;
-  margin: 0 auto;
+	max-width: 1280px;
+	padding: 0 18px;
+	margin: 0 auto;
 }
 
 .font-keleti {
-  font-family: 'Keleti', sans-serif;
+	font-family: "Keleti", sans-serif;
+}
+
+@property --border-angle {
+	inherits: false;
+	initial-value: 0deg;
+	syntax: "<angle>";
 }

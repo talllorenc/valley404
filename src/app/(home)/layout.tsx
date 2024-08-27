@@ -1,14 +1,14 @@
-import Navbar from '@/components/Navbar/Navbar'
+import Navbar from "@/components/Navbar/Navbar";
 
 export default async function HomeLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode;
 }) {
-  return (
-    <div>
-      <Navbar />
-      {children}
-    </div>
-  )
+	return (
+		<div className="flex-grow flex-1 flex flex-col pt-[72px] overflow-x-hidden">
+			<Navbar />
+			{children}
+		</div>
+	);
 }

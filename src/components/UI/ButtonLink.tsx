@@ -1,22 +1,22 @@
 import { IButtonLink } from "@/types/button.link";
 import Link from "next/link";
-import Image from "next/image";
 
-const ButtonLink = ({ href, text }: IButtonLink) => {
-  return (
-    <Link
-      href={href}
-      className="flex items-center gap-1 hover:shadow-buttonLight hover:dark:shadow-buttonDark transition duration-200 bg-bgDark dark:bg-bgLight text-light dark:text-dark rounded p-2 font-bold"
-    >
-      {text}
-      <Image
-        src="/Buttons/arrow-right2.png"
-        alt="arrow icon"
-        width={20}
-        height={20}
-      />
-    </Link>
-  );
+const ButtonLink = ({
+	href,
+	text,
+	bgColor = "#ede4da",
+	textColor = "#17181c",
+	icon,
+}: IButtonLink) => {
+	return (
+		<Link
+			style={{ backgroundColor: bgColor, color: textColor }}
+			href={href}
+			className="flex items-center gap-2 px-4 py-2 font-bold rounded transition duration-200 hover:opacity-80 ">
+			{text}
+			{icon}
+		</Link>
+	);
 };
 
 export default ButtonLink;

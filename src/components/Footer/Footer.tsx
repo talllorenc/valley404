@@ -7,9 +7,13 @@ import { menuLinks } from "@/constants/menu.links";
 
 const Footer = () => {
 	const pathname = usePathname();
+
+	if (pathname === "/") {
+		return null;
+	}
+
 	return (
-		<footer
-			className={`w-full flex flex-col border-t border-dark/50 dark:border-light/50 ${pathname === "/" ? "hidden" : "block"}`}>
+		<footer className="w-full flex flex-col border-t border-dark/50 dark:border-light/50">
 			<div className="mx-auto max-w-7xl flex w-full flex-col items-center justify-center px-6 py-8">
 				<Link
 					href="/"

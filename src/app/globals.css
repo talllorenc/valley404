@@ -42,9 +42,3 @@ a {
 .font-keleti {
 	font-family: "Keleti", sans-serif;
 }
-
-@property --border-angle {
-	inherits: false;
-	initial-value: 0deg;
-	syntax: "<angle>";
-}

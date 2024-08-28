@@ -8,18 +8,18 @@ import {
 const Technologies = () => {
 	return (
 		<div className="flex flex-col">
-			<div className="flex items-center flex-col justify-center gap-4 text-center">
-				<h2 className="font-bold text-4xl text-center uppercase">
-					Technologies
-				</h2>
-				<h3 className="font-medium text-dark/50 dark:text-light/50">
+			<div className="flex items-center flex-col justify-center gap-4 text-center font-keleti">
+				<h2 className="font-medium text-7xl text-center">Technologies</h2>
+				<h3 className="text-2xl text-dark/50 dark:text-light/50">
 					Technologies that were used in the development of the portal
 				</h3>
 			</div>
 
-			<div className="flex flex-col gap-12 mt-12">
+			<div className="flex flex-col gap-12 mt-8">
 				<div className="flex flex-col gap-4">
-					<h3 className="font-bold text-2xl text-center">FRONTEND</h3>
+					<h3 className="font-medium text-4xl text-center font-keleti">
+						Frontend
+					</h3>
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-8 gap-5">
 						{technologiesFrontendArray.map((image) => (
 							<div
@@ -41,7 +41,9 @@ const Technologies = () => {
 				</div>
 
 				<div className="flex flex-col gap-4">
-					<h3 className="font-bold text-2xl text-center">BACKEND</h3>
+					<h3 className="font-medium text-4xl text-center font-keleti">
+						Backend
+					</h3>
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-8 gap-5">
 						{technologiesBackendArray.map((image) => (
 							<div
@@ -63,7 +65,9 @@ const Technologies = () => {
 				</div>
 
 				<div className="flex flex-col gap-4">
-					<h3 className="font-bold text-2xl text-center">INTEGRATIONS</h3>
+					<h3 className="font-medium text-4xl text-center font-keleti">
+						Integrations
+					</h3>
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-8 gap-5">
 						{technologiesIntegrationsArray.map((image) => (
 							<div

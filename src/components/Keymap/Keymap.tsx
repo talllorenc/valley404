@@ -13,7 +13,9 @@ const Keymap = () => {
 				</h2>
 				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-8 gap-5 cursor-help">
 					{keymapNavigationArray.map((item) => (
-						<div className="flex flex-col gap-2 items-center text-center border border-[#3e3c3c] p-1 rounded transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight">
+						<div
+							key={item.id}
+							className="flex flex-col gap-2 items-center text-center border border-[#3e3c3c] p-1 rounded transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight">
 							<p className="text-2xl font-bold bg-[#535151] dark:bg-[#2a2828] border border-[#3e3c3c] px-2 text-light rounded-full">
 								{item.key}
 							</p>

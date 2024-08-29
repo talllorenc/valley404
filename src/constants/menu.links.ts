@@ -11,4 +11,9 @@ export const menuLinks: IMenuLinks[] = [
 		title: "Contact",
 		path: "/contact",
 	},
+	{
+		id: 3,
+		title: "Keymap",
+		path: "/keymap",
+	},
 ];

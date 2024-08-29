@@ -16,7 +16,7 @@ const BreadCrumbs: React.FC = () => {
 	const pathSegments = pathname.split("/").filter((segment) => segment);
 
 	return (
-		<div className="">
+		<div className="pb-4">
 			<nav>
 				<ul className="flex gap-2 items-center flex-wrap">
 					<li>

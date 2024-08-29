@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout/Layout";
 import AboutPage from "@/components/Pages/AboutPage";
 import { Metadata } from "next";
-import SotialsMenu from "@/components/SotialsMenu/SotialsMenu";
+import SocialsMenu from "@/components/SotialsMenu/SotialsMenu";
 
 export const metadata: Metadata = {
 	title: "About portal | Valley 404",
@@ -21,8 +21,8 @@ const page = () => {
 		<div>
 			<div
 				style={{ backgroundImage: 'url("/About/mainBg.png")' }}
-				className="bg-cover bg-bottom bg-no-repeat min-h-[50vh] md:min-h-[50vh] overflow-hidden flex flex-col gap-4 items-end justify-center border-b-4 border-dark dark:border-light">
-				<SotialsMenu />
+				className="bg-cover bg-bottom bg-no-repeat min-h-[50vh] overflow-hidden flex flex-col gap-4 items-end justify-center border-b-4 border-dark dark:border-light">
+				<SocialsMenu />
 			</div>
 			<Layout>
 				<AboutPage />

@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const SocialsMenu = () => {
 	return (
-		<div className="p-4 flex flex-col gap-4 ">
+		<div className="p-4 flex gap-4">
 			{socialsMenu.map((social) => (
 				<a
 					key={social.id}
-					className="transition duration-200 rounded-full hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-pointer"
+					className="transition duration-200 rounded-full hover:shadow-buttonLight cursor-pointer"
 					target="_blank">
 					<Image
 						src={social.src}

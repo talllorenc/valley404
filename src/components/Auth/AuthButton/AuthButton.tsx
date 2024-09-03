@@ -5,9 +5,9 @@ const AuthButton = () => {
 	return (
 		<Link
 			href="/sign-in"
-			className="flex items-center gap-2 border border-dark dark:border-light transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight px-4 py-1 rounded font-bold text-dark dark:text-light">
+			className="flex items-center gap-2 border border-dark dark:border-light hover:shadow-buttonDark dark:hover:shadow-buttonLight transition duration-200 px-4 py-1 rounded-xl">
 			<FaRegUser />
-			JOIN
+			Join
 		</Link>
 	);
 };

@@ -4,8 +4,8 @@
 
 @layer base {
 	body {
-		@apply dark:bg-[#17181c] bg-[#ede4da];
-		@apply dark:text-[#ede4da] text-[#17181c];
+		@apply dark:bg-black bg-white;
+		@apply dark:text-white text-black;
 	}
 }
 

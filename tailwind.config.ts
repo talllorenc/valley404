@@ -19,8 +19,8 @@ const config: Config = {
 			colors: {
 				bgDark: "#17181c",
 				bgLight: "#ede4da",
-				dark: "#17181c",
-				light: "#ede4da",
+				dark: "#000000",
+				light: "#ffffff",
 				blue: "#668da9",
 			},
 			boxShadow: {

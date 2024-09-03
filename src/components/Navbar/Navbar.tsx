@@ -7,6 +7,8 @@ import AuthButton from "@/components/Auth/AuthButton/AuthButton";
 import { HiBars2 } from "react-icons/hi2";
 import { useState } from "react";
 import MenuNavbarModal from "@/components/Menu/MenuNavbar/MenuNavbarModal";
+import useKeydown from "@/hooks/useKeydown";
+import { IoCloseOutline } from "react-icons/io5";
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -15,8 +17,10 @@ const Navbar = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
 
+	useKeydown(["Ctrl", "Q"], toggleMenu);
+
 	return (
-		<header className="w-full fixed top-0 z-50 py-3 px-4 bg-light dark:bg-dark backdrop-blur bg-opacity-50 dark:backdrop-blur dark:bg-opacity-50 border-b border-dark/50 dark:border-light/50">
+		<header className="w-full fixed top-0 z-50 py-3 px-4 bg-light dark:bg-dark border-b border-dark/50 dark:border-light/50">
 			<div className="flex items-center justify-between">
 				<div className="flex items-center gap-4">
 					<Link href="/">
@@ -30,9 +34,13 @@ const Navbar = () => {
 					</Link>
 
 					<div
-						className="hover:shadow-buttonDark dark:hover:shadow-buttonLight transition duration-200 border-dark dark:border-light border p-1 rounded"
+						className="hover:shadow-buttonDark dark:hover:shadow-buttonLight transition duration-200 border-dark dark:border-light border p-1 rounded-xl cursor-pointer"
 						onClick={toggleMenu}>
-						<HiBars2 className="text-3xl" />
+						{!isMenuOpen ? (
+							<HiBars2 className="text-3xl" />
+						) : (
+							<IoCloseOutline className="text-3xl" />
+						)}
 					</div>
 				</div>
 

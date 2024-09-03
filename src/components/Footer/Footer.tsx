@@ -25,7 +25,7 @@ const Footer = () => {
 						height={40}
 						className="rounded"
 					/>
-					<p className="font-keleti text-3xl">Valley404</p>
+					<p className="text-xl font-bold">Valley404</p>
 				</Link>
 
 				<nav className="font-medium mt-4">

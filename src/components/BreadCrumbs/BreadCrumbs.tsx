@@ -3,8 +3,8 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
+import { TiHome } from "react-icons/ti";
 
 const BreadCrumbs: React.FC = () => {
 	const pathname = usePathname();
@@ -21,12 +21,7 @@ const BreadCrumbs: React.FC = () => {
 				<ul className="flex gap-2 items-center flex-wrap">
 					<li>
 						<Link href="/">
-							<Image
-								src="/BreadCrumbs/home.png"
-								width={30}
-								height={30}
-								alt="home image"
-							/>
+							<TiHome className="text-xl" />
 						</Link>
 					</li>
 					{pathSegments.length > 0 && <FaAngleRight />}

@@ -6,3 +6,5 @@ const options = {
 };
 
 const API = axios.create(options);
+
+export default API;

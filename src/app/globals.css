@@ -7,13 +7,14 @@
 		@apply dark:bg-black bg-white;
 		@apply dark:text-white text-black;
 	}
-}
 
-@font-face {
-	font-family: "Keleti";
-	src: url("/fonts/Keleti-Regular.ttf");
-	font-weight: normal;
-	font-style: normal;
+	.ce-toolbar__plus {
+		color: black;
+	}
+
+	.dark .ce-toolbar__plus {
+		color: white;
+	}
 }
 
 * {
@@ -25,7 +26,6 @@
 body {
 	overflow-x: hidden;
 	min-height: 100vh;
-	font-size: 18px;
 }
 
 a {
@@ -37,8 +37,4 @@ a {
 	max-width: 1280px;
 	padding: 0 18px;
 	margin: 0 auto;
-}
-
-.font-keleti {
-	font-family: "Keleti", sans-serif;
 }

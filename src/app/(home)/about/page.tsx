@@ -25,13 +25,13 @@ const page = () => {
 				<div
 					style={{ backgroundImage: 'url("/About/mainBg.png")' }}
 					className="bg-cover bg-bottom bg-no-repeat min-h-[70vh] overflow-hidden blur-xl"></div>
-				<div className="absolute bottom-0 right-4 z-50">
+				<div className="absolute bottom-0 right-4 z-20">
 					<SocialsMenu />
 				</div>
 				<div className="absolute inset-0 flex items-center justify-center flex-col gap-8">
-					<h1 className="text-white text-4xl md:text-6xl font-bold uppercase text-center">
+					<p className="text-white text-4xl md:text-6xl font-bold uppercase text-center">
 						Your adventure begins here
-					</h1>
+					</p>
 
 					<div className="flex items-center gap-4">
 						<Link

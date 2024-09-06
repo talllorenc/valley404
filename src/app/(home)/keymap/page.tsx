@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const page = () => {
 	return (
-		<Layout>Keymap Page</Layout>
+		<Layout>KeyMapPage</Layout>
 		// <Layout>
 		// 	<KeymapPage />
 		// </Layout>

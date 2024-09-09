@@ -5,7 +5,7 @@ const KeymapPage = () => {
 	return (
 		<div className="flex flex-col">
 			<BreadCrumbs />
-			<h1 className="font-bold text-5xl">Useful shortcuts</h1>
+			<h1 className="font-bold text-5xl text-center">Useful shortcuts</h1>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
 				<div className="text-center p-4 border-2 border-dark/50 dark:border-light/50 rounded shadow-buttonDark dark:shadow-buttonLight">
 					<p>

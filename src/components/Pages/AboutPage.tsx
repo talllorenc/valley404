@@ -16,7 +16,7 @@ const AboutPage = () => {
 				</p>
 
 				<p>
-					Whether you're a seasoned professional or just starting your journey,
+					Whether you are a seasoned professional or just starting your journey,
 					Valley 404 is your go-to destination for inspiration, knowledge, and
 					growth. Join us in shaping the future of technology, one idea at a
 					time.

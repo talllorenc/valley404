@@ -4,13 +4,11 @@ const Keymap = () => {
 	return (
 		<div className="flex flex-col">
 			<div className="flex items-center justify-center text-center font-keleti">
-				<h2 className="font-medium text-7xl text-center">Keymap types</h2>
+				<h2 className="font-medium text-5xl text-center">Keymap types</h2>
 			</div>
 
 			<div className="flex flex-col gap-12 mt-8">
-				<h2 className="font-medium text-4xl text-center font-keleti">
-					Navigation
-				</h2>
+				<h2 className="font-medium text-3xl text-center">Navigation</h2>
 				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-8 gap-5 cursor-help">
 					{keymapNavigationArray.map((item) => (
 						<div

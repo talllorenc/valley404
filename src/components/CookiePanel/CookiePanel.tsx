@@ -30,7 +30,7 @@ const CookiePanel = () => {
 
 				<div className="text-md">
 					<p className="font-bold">This website uses cookies</p>
-					<p>
+					<p className="">
 						By proceeding, you agree to the use of cookies for improving site
 						performance and analytics. If you do not consent, please exit the
 						site

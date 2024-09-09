@@ -2,7 +2,7 @@ import SigninPage from "@/components/Pages/SigninPage";
 
 const page = () => {
 	return (
-		<div className="w-full max-w-md mx-auto">
+		<div className="w-full">
 			<SigninPage />
 		</div>
 	);

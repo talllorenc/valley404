@@ -36,7 +36,7 @@ const BreadCrumbs: React.FC = () => {
 								<li>
 									<Link
 										href={href}
-										className={`${isLastSegment && "underline font-bold"}`}>
+										className={`${isLastSegment && "underline font-bold text-[#02d7f2]"} hover:text-[#02d7f2]`}>
 										{itemLink}
 									</Link>
 								</li>

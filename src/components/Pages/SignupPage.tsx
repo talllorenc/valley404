@@ -4,7 +4,7 @@ import SignupForm from "@/components/Auth/SignupForm/SignupForm";
 
 const SignupPage = () => {
 	return (
-		<div className="flex flex-col gap-4 xs:py-16 sm:py-16 lg:py-20 px-4">
+		<div className="flex flex-col gap-4 px-4">
 			<SignupForm />
 			<HomeButton
 				href="/"

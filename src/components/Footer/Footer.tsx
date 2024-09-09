@@ -35,8 +35,8 @@ const Footer = () => {
 							return (
 								<li
 									key={link.id}
-									className={`hover:text-[#ca5954] dark:hover:text-[#eeb551] transition-all duration-200 ${
-										isActive ? "text-[#ca5954] dark:text-[#eeb551]" : ""
+									className={`hover:text-[#02d7f2] transition-all duration-200 ${
+										isActive && "text-[#02d7f2]"
 									}`}>
 									<Link href={link.path}>{link.title}</Link>
 								</li>

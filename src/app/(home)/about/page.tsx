@@ -36,12 +36,12 @@ const page = () => {
 					<div className="flex items-center gap-4">
 						<Link
 							href="/solutions"
-							className="text-dark bg-light hover:shadow-buttonDark transition duration-200 px-4 py-1 rounded-xl">
+							className="text-dark bg-light hover:opacity-80 transition duration-200 px-4 py-1 rounded-xl">
 							Solutions
 						</Link>
 						<Link
 							href="/contacts"
-							className="flex items-center gap-2 text-light bg-dark hover:shadow-buttonLight transition duration-200 px-4 py-1 rounded-xl">
+							className="flex items-center gap-2 text-light bg-dark hover:opacity-80 transition duration-200 px-4 py-1 rounded-xl">
 							<CiMail />
 							Contact
 						</Link>

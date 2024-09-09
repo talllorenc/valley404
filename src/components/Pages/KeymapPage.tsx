@@ -5,8 +5,8 @@ const KeymapPage = () => {
 	return (
 		<div className="flex flex-col">
 			<BreadCrumbs />
-			<h1 className="font-keleti font-medium text-7xl">Useful shortcuts</h1>
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8 font-keleti text-2xl">
+			<h1 className="font-bold text-5xl">Useful shortcuts</h1>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
 				<div className="text-center p-4 border-2 border-dark/50 dark:border-light/50 rounded shadow-buttonDark dark:shadow-buttonLight">
 					<p>
 						On this page you will find all the necessary keyboard shortcuts that

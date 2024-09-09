@@ -19,8 +19,8 @@ const MenuItems = ({ closeMenu }: Props) => {
 							onClick={closeMenu}
 							href={link.path}
 							key={link.id}
-							className={`flex justify-between items-center hover:text-[#ca5954] dark:hover:text-[#eeb551] transition-all duration-200 cursor-pointer ${
-								isActive ? "text-[#ca5954] dark:text-[#eeb551]" : ""
+							className={`flex justify-between items-center hover:text-[#02d7f2] transition-all duration-200 cursor-pointer ${
+								isActive && "text-[#02d7f2]"
 							}`}>
 							<p>{link.title}</p>
 							<FaAngleRight />

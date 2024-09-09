@@ -22,7 +22,7 @@ const Technologies = () => {
 						{technologiesFrontendArray.map((image) => (
 							<div
 								key={image.id}
-								className="flex flex-col items-center border border-dark/50 dark:border-light/50 p-4 justify-between rounded transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
+								className="flex flex-col items-center border border-dark/50 dark:border-light/50 p-4 justify-between rounded-xl transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
 								<Image
 									src={image.src}
 									alt={image.alt}
@@ -30,9 +30,7 @@ const Technologies = () => {
 									height={50}
 									className="w-14 h-14 mx-auto"
 								/>
-								<p className="mt-2 text-center text-lg font-medium">
-									{image.desc}
-								</p>
+								<p className="mt-2 text-center font-medium">{image.desc}</p>
 							</div>
 						))}
 					</div>
@@ -44,7 +42,7 @@ const Technologies = () => {
 						{technologiesBackendArray.map((image) => (
 							<div
 								key={image.id}
-								className="flex flex-col items-center border border-dark/50 dark:border-light/50 p-4 justify-between rounded transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
+								className="flex flex-col items-center border border-dark/50 dark:border-light/50 p-4 justify-between rounded-xl transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
 								<Image
 									src={image.src}
 									alt={image.alt}
@@ -52,9 +50,7 @@ const Technologies = () => {
 									height={50}
 									className="w-14 h-14 mx-auto"
 								/>
-								<p className="mt-2 text-center text-lg font-medium">
-									{image.desc}
-								</p>
+								<p className="mt-2 text-center font-medium">{image.desc}</p>
 							</div>
 						))}
 					</div>
@@ -66,7 +62,7 @@ const Technologies = () => {
 						{technologiesIntegrationsArray.map((image) => (
 							<div
 								key={image.id}
-								className="flex flex-col items-center border border-dark/50 dark:border-light/50 p-4 justify-between rounded transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
+								className="flex flex-col items-center border border-dark/50 dark:border-light/50 p-4 justify-between rounded-xl transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
 								<Image
 									src={image.src}
 									alt={image.alt}
@@ -74,9 +70,7 @@ const Technologies = () => {
 									height={50}
 									className="w-14 h-14 mx-auto"
 								/>
-								<p className="mt-2 text-center text-lg font-medium">
-									{image.desc}
-								</p>
+								<p className="mt-2 text-center font-medium">{image.desc}</p>
 							</div>
 						))}
 					</div>

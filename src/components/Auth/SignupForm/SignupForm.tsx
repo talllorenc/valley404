@@ -45,7 +45,7 @@ const SignupForm = () => {
 		mutationFn: signup,
 		onSuccess: (data) => {
 			setServerError(null);
-			router.push(`/verify-email?token=${data.token}`);
+			router.replace(`/verify-email?token=${data.token}`);
 		},
 		onError: (error: any) => {
 			setServerError(

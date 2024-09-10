@@ -30,6 +30,7 @@ const Navbar = () => {
 							width={40}
 							height={40}
 							className="rounded transistion duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight hover:scale-90"
+							priority
 						/>
 					</Link>
 

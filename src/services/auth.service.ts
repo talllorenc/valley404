@@ -10,3 +10,8 @@ export async function signin(data: ISignin) {
 	const res = await API.post("/auth/sign-in", data);
 	return res.data;
 }
+
+export async function checkCode(code: string) {
+	const res = await API.post("/auth/check-code", { code });
+	return res.data;
+}

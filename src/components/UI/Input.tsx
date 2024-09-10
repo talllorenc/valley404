@@ -25,12 +25,12 @@ const Input = ({
 }: IInputProps) => {
 	return (
 		<div className="flex gap-1 flex-col w-full">
-			<label htmlFor={id} className="">
+			<label htmlFor={id} className="font-medium">
 				{label}
 			</label>
 			<div className="relative flex items-center">
 				{icon && (
-					<div className="absolute left-3 flex items-center text-dark/50 dark:text-light/50">
+					<div className="absolute left-3 flex items-center text-dark/50 dark:text-light/50 z-10">
 						{icon}
 					</div>
 				)}
@@ -43,10 +43,8 @@ const Input = ({
 					onBlur={onBlur}
 					value={value}
 					onChange={onChange}
-					className={`w-full py-1 pl-10 pr-4 rounded-xl appearance-none focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-light bg-transparent placeholder-dark/50 dark:placeholder-light/50 ${
-						error && touched
-							? "border border-[#FF3333]"
-							: "border border-dark/50 dark:border-light/50"
+					className={`w-full py-1 pl-10 pr-4 rounded-xl appearance-none focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-light dark:bg-dark/50 bg-light/50 backdrop-blur-2xl placeholder-dark/50 dark:placeholder-light/50 ${
+						error && touched && "border border-[#FF3333]"
 					}`}
 				/>
 			</div>

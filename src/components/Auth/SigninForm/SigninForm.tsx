@@ -21,6 +21,8 @@ const validationSchema = Yup.object({
 });
 
 const SigninForm = () => {
+	const [serverError, setServerError] = useState<string | null>(null);
+
 	const { mutate, isPending } = useMutation({
 		mutationFn: signin,
 		onSuccess: () => {
@@ -34,7 +36,6 @@ const SigninForm = () => {
 			);
 		},
 	});
-	const [serverError, setServerError] = useState<string | null>(null);
 
 	const { values, handleChange, touched, handleBlur, handleSubmit, errors } =
 		useFormik<ISignin>({
@@ -50,9 +51,9 @@ const SigninForm = () => {
 		});
 
 	return (
-		<div className="flex flex-col gap-4 p-4 rounded-xl dark:bg-dark/40 bg-light/40 backdrop-blur-2xl">
+		<div className="flex flex-col gap-4 rounded-xl">
 			<div className="flex flex-col items-center justify-center text-center">
-				<p className="text-lg font-bold">Sign in to Valley404</p>
+				<p className="text-5xl font-bold uppercase">Sign in</p>
 				<p className="text-dark/50 dark:text-light/50">
 					Welcome back! Please sign in to continue
 				</p>

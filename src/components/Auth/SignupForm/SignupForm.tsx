@@ -86,9 +86,9 @@ const SignupForm = () => {
 	});
 
 	return (
-		<div className="flex flex-col gap-4 p-4 rounded-xl dark:bg-dark/40 bg-light/40 backdrop-blur-2xl">
+		<div className="flex flex-col gap-4 rounded-xl">
 			<div className="flex flex-col items-center justify-center text-center">
-				<p className="text-lg font-bold">Sign up to Valley404</p>
+				<p className="text-5xl font-bold uppercase">Sign up</p>
 				<p className="text-dark/50 dark:text-light/50">
 					Welcome! Please sign up to continue
 				</p>

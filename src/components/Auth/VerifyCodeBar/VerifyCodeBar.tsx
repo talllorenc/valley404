@@ -22,6 +22,7 @@ const VerifyCodeBar = () => {
 		mutationFn: checkCode,
 		onSuccess: () => {
 			setServerError(null);
+			setCode(["", "", "", ""]);
 			setSuccessMessage("Verification successful. You can now sign in");
 		},
 		onError: (error: any) => {
@@ -75,7 +76,7 @@ const VerifyCodeBar = () => {
 	if (isPending) {
 		return (
 			<div className="flex items-center justify-center">
-				<Spinner weight="64px" height="64px" />
+				<Spinner width="64px" height="64px" />
 			</div>
 		);
 	}

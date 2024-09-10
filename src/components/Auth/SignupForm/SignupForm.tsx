@@ -10,7 +10,6 @@ import ButtonSubmit from "@/components/UI/ButtonSubmit";
 import { IoMdArrowDropright } from "react-icons/io";
 import FormErrors from "@/components/Auth/FormErrors/FormErrors";
 import { useState } from "react";
-import FormSuccess from "@/components/Auth/FormSuccess/FormSuccess";
 import { useMutation } from "@tanstack/react-query";
 import { signup } from "@/services/auth.service";
 import { useRouter } from "next/navigation";
@@ -41,19 +40,12 @@ const validationSchema = Yup.object({
 const SignupForm = () => {
 	const router = useRouter();
 	const [serverError, setServerError] = useState<string | null>(null);
-	const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
 	const { mutate, isPending } = useMutation({
 		mutationFn: signup,
-		onSuccess: () => {
+		onSuccess: (data) => {
 			setServerError(null);
-			setSuccessMessage(
-				"Registration successful. Please check your email to verify your account.",
-			);
-			resetForm();
-			setTimeout(() => {
-				router.push("/sign-in");
-			}, 4000);
+			router.push(`/verify-email?token=${data.token}`);
 		},
 		onError: (error: any) => {
 			setServerError(
@@ -152,7 +144,6 @@ const SignupForm = () => {
 			</form>
 
 			{serverError && <FormErrors message={serverError} />}
-			{successMessage && <FormSuccess message={successMessage} />}
 
 			<div className="flex items-center justify-center py-2">
 				<span className="text-center text-dark/50 dark:text-light/50">

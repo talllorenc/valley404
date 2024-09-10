@@ -1,17 +1,19 @@
 import API from "@/config/api";
-import { ISignin, ISignup } from "@/types/auth";
+import { ISignin, ISignup, ISignupResponse } from "@/types/auth";
 
-export async function signup(data: ISignup) {
-	const res = await API.post("/auth/sign-up", data);
-	return res.data;
+export async function signup(data: ISignup): Promise<ISignupResponse> {
+	return await API.post("/auth/sign-up", data);
 }
 
 export async function signin(data: ISignin) {
-	const res = await API.post("/auth/sign-in", data);
-	return res.data;
+	return await API.post("/auth/sign-in", data);
 }
 
 export async function checkCode(code: string) {
-	const res = await API.post("/auth/check-code", { code });
-	return res.data;
+	return await API.post("/auth/check-code", { code });
+}
+
+export async function checkToken(token: string) {
+	console.log(token);
+	return await API.post("/auth/check-token", { token });
 }

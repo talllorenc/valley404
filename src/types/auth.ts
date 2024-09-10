@@ -17,3 +17,8 @@ export interface IFormErrors {
 export interface IFormSuccess {
 	message?: string;
 }
+
+export interface ISignupResponse {
+	token: string;
+	message: string;
+}

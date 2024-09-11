@@ -4,7 +4,7 @@ const SettingsPage = () => {
 	return (
 		<div className="flex flex-col">
 			<BreadCrumbs />
-			<h1 className="font-bold text-5xl">Settings</h1>
+			<h1 className="font-bold text-5xl text-center">Settings</h1>
 		</div>
 	);
 };

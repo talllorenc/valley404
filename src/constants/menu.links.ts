@@ -17,3 +17,21 @@ export const menuLinks: IMenuLinks[] = [
 		path: "/keymap",
 	},
 ];
+
+export const menuUserLinks: IMenuLinks[] = [
+	{
+		id: 1,
+		title: "Profile",
+		path: "/user",
+	},
+	{
+		id: 2,
+		title: "Settings",
+		path: "/user/settings",
+	},
+	{
+		id: 3,
+		title: "Dashboard",
+		path: "/user/dashboard",
+	},
+];

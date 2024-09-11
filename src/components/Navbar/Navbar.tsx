@@ -20,7 +20,7 @@ const Navbar = () => {
 	useKeydown(["Ctrl", "Q"], toggleMenu);
 
 	return (
-		<header className="w-full fixed top-0 z-50 py-3 px-4 bg-light dark:bg-dark border-b border-dark/50 dark:border-light/50">
+		<header className="w-full fixed top-0 z-50 py-3 px-4 bg-light dark:bg-dark border-b border-dark/20 dark:border-light/20">
 			<div className="flex items-center justify-between">
 				<div className="flex items-center gap-4">
 					<Link href="/">

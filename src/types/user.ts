@@ -3,6 +3,7 @@ export interface ICurrentUserResponse {
 	name: string;
 	verified: boolean;
 	email: string;
+	role: string;
 	solutions: string[];
 	image?: string;
 	createdAt: string;

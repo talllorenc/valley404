@@ -26,8 +26,8 @@ const config: Config = {
 			boxShadow: {
 				buttonLight: "2px 2px 1px 1px rgba(237,228,218, 1)",
 				buttonDark: "2px 2px 1px 1px rgba(23,24,28, 1)",
-				buttonBlue: "2px 2px 7px 1px rgba(102,141,159, 1)",
-				buttonBlueBrick: "0px 0px 7px 4px rgba(102,141,159, 1)",
+				buttonBlue: "2px 2px 7px 1px rgba(237,228,218, 1)",
+				buttonLightBrick: "0px 0px 5px 2px rgba(237,228,218, 1)",
 			},
 			keyframes: {
 				border: {

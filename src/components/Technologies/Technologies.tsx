@@ -22,7 +22,7 @@ const Technologies = () => {
 						{technologiesFrontendArray.map((image) => (
 							<div
 								key={image.id}
-								className="flex flex-col items-center border border-dark/50 dark:border-light/50 p-4 justify-between rounded-xl transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
+								className="flex flex-col items-center border border-dark/20 dark:border-light/20 p-4 justify-between rounded-xl transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
 								<Image
 									src={image.src}
 									alt={image.alt}
@@ -42,7 +42,7 @@ const Technologies = () => {
 						{technologiesBackendArray.map((image) => (
 							<div
 								key={image.id}
-								className="flex flex-col items-center border border-dark/50 dark:border-light/50 p-4 justify-between rounded-xl transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
+								className="flex flex-col items-center border border-dark/20 dark:border-light/20 p-4 justify-between rounded-xl transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
 								<Image
 									src={image.src}
 									alt={image.alt}
@@ -62,7 +62,7 @@ const Technologies = () => {
 						{technologiesIntegrationsArray.map((image) => (
 							<div
 								key={image.id}
-								className="flex flex-col items-center border border-dark/50 dark:border-light/50 p-4 justify-between rounded-xl transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
+								className="flex flex-col items-center border border-dark/20 dark:border-light/20 p-4 justify-between rounded-xl transition duration-200 hover:shadow-buttonDark dark:hover:shadow-buttonLight cursor-help">
 								<Image
 									src={image.src}
 									alt={image.alt}

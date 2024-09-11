@@ -13,6 +13,10 @@ export async function checkCode(code: string) {
 	return await API.post("/auth/check-code", { code });
 }
 
+export async function logout() {
+	return await API.post("/auth/logout");
+}
+
 export async function checkToken(token: string) {
 	console.log(token);
 	return await API.post("/auth/check-token", { token });

@@ -1,13 +1,12 @@
 "use client";
 
 import VerifyCodeBar from "@/components/Auth/VerifyCodeBar/VerifyCodeBar";
-import HomeButton from "@/components/tl-ui/HomeButton";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useMutation } from "@tanstack/react-query";
 import { checkToken } from "@/services/auth.service";
 import Spinner from "@/components/UI/Spinner";
+import HomeButton from "../tl-ui/HomeButton";
 
 const VerifyEmailPageContent = () => {
 	const [loading, setLoading] = useState<boolean>(true);
@@ -50,11 +49,7 @@ const VerifyEmailPageContent = () => {
 				expires, please log in again to request a new one
 			</p>
 			<VerifyCodeBar />
-			<HomeButton
-				href="/"
-				text="Go back to the home page"
-				icon={<FaRegArrowAltCircleRight />}
-			/>
+			<HomeButton />
 		</div>
 	);
 };

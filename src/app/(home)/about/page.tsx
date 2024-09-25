@@ -4,6 +4,7 @@ import AboutPage from "@/components/Pages/AboutPage";
 import SocialsMenu from "@/components/SotialsMenu/SotialsMenu";
 import { CiMail } from "react-icons/ci";
 import Link from "next/link";
+import { Button } from "@/components/tl-ui/button";
 
 export const metadata: Metadata = {
 	title: "About portal | Valley 404",
@@ -34,17 +35,17 @@ const page = () => {
 					</p>
 
 					<div className="flex items-center gap-4">
-						<Link
-							href="/solutions"
-							className="text-dark bg-light hover:opacity-80 transition duration-200 px-4 py-1 rounded-xl">
-							Solutions
+						<Link href="/solutions">
+							<Button>Solutions</Button>
 						</Link>
-						<Link
+						{/* <Link
 							href="/contacts"
 							className="flex items-center gap-2 text-light bg-dark hover:opacity-80 transition duration-200 px-4 py-1 rounded-xl">
-							<CiMail />
-							Contact
-						</Link>
+							<Button variant="outline">
+								<CiMail className="mr-2" />
+								Contact
+							</Button>
+						</Link> */}
 					</div>
 				</div>
 			</div>

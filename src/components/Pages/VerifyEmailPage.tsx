@@ -1,7 +1,7 @@
 "use client";
 
 import VerifyCodeBar from "@/components/Auth/VerifyCodeBar/VerifyCodeBar";
-import HomeButton from "@/components/UI/HomeButton";
+import HomeButton from "@/components/tl-ui/HomeButton";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -46,7 +46,7 @@ const VerifyEmailPageContent = () => {
 		<div className="flex flex-col gap-4 p-4">
 			<h1 className="font-bold text-5xl text-center">Verify Email</h1>
 			<p className="text-center text-dark/50 dark:text-light/50">
-				Enter the code sent to your email. It’s valid for 1 hour. After it
+				Enter the code sent to your email. It is valid for 1 hour. After it
 				expires, please log in again to request a new one
 			</p>
 			<VerifyCodeBar />

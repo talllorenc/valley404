@@ -3,6 +3,7 @@
 import { LiaCookieBiteSolid } from "react-icons/lia";
 import ButtonSubmit from "@/components/UI/ButtonSubmit";
 import { useEffect, useState } from "react";
+import { Button } from "../tl-ui/button";
 
 const CookiePanel = () => {
 	const [isCookieAllowed, setIsCookieAllowed] = useState(false);
@@ -37,7 +38,7 @@ const CookiePanel = () => {
 					</p>
 				</div>
 
-				<ButtonSubmit text="Accept" onClick={allowCookieHandler} />
+				<Button onClick={allowCookieHandler}>Accept</Button>
 			</div>
 		</div>
 	);

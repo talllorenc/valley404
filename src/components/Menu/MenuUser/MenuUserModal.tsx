@@ -33,7 +33,7 @@ const MenuUserModal = ({ isMenuOpen, closeMenu, user }: Props) => {
 					transition={{ duration: 0.2 }}
 					exit={{ opacity: 0, translateY: 0 }}
 					onClick={(e) => e.stopPropagation()}
-					className="fixed right-4 top-16 max-w-xs w-full bg-light text-dark rounded-xl shadow-buttonLightBrick">
+					className="fixed right-4 top-16 max-w-xs w-full bg-white rounded-xl border border-black/20 dark:border-white/20">
 					<div className="flex flex-col">
 						<div className="flex items-center gap-2 p-2 border-b border-dark/20">
 							<Image
@@ -44,7 +44,7 @@ const MenuUserModal = ({ isMenuOpen, closeMenu, user }: Props) => {
 								className="rounded-full"
 							/>
 							<div className="flex flex-col overflow-hidden">
-								<p className="truncate font-bold">{user.email}</p>
+								<p className="truncate font-bold text-black">{user.email}</p>
 								<p className="truncate ">{user.name}</p>
 							</div>
 						</div>

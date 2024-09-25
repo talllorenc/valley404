@@ -5,7 +5,7 @@ const UserPage = () => {
 	return (
 		<div className="flex flex-col">
 			<BreadCrumbs />
-			<h1 className="font-bold text-5xl text-center">Profile</h1>
+			<h1 className="font-bold text-5xl text-center text-black dark:text-white">Profile</h1>
 			<UserMainInfo />
 		</div>
 	);

@@ -5,7 +5,7 @@ const AboutPage = () => {
 	return (
 		<div className="flex flex-col">
 			<BreadCrumbs />
-			<h1 className="font-bold text-5xl text-center">About</h1>
+			<h1 className="font-bold text-5xl text-center text-black dark:text-white">About</h1>
 			<div className="flex flex-col gap-4 items-center justify-center text-center mt-8">
 				<p>
 					Welcome to Valley 404, a portal dedicated to providing a cutting-edge

@@ -5,7 +5,7 @@ const KeymapPage = () => {
 	return (
 		<div className="flex flex-col">
 			<BreadCrumbs />
-			<h1 className="font-bold text-5xl text-center">Useful shortcuts</h1>
+			<h1 className="font-bold text-5xl text-center text-black dark:text-white">Useful shortcuts</h1>
 			<div className="flex flex-col mt-8 text-center">
 				<p>
 					On this page you will find all the necessary keyboard shortcuts that

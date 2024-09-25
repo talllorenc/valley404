@@ -18,8 +18,8 @@ const MenuUserItems = ({ closeMenu }: Props) => {
 							onClick={closeMenu}
 							href={link.path}
 							key={link.id}
-							className={`flex items-center hover:bg-dark/10 transition-all duration-200 cursor-pointer p-2 ${
-								isActive && "bg-light/10 dark:bg-dark/10"
+							className={`flex items-center hover:text-black hover:underline hover:underline-offset-4 transition-all text-black duration-200 cursor-pointer p-2 ${
+								isActive && "underline underline-offset-4"
 							}`}>
 							<p>{link.title}</p>
 						</Link>

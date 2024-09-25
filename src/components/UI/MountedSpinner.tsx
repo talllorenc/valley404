@@ -1,8 +1,8 @@
 const MountedSpinner = () => {
 	return (
-		<div className="flex justify-center items-center rounded-full border border-[#636167] gap-2 p-1 w-[74px] h-[38px]">
+		<div className="flex justify-center items-center rounded-full border border-[#636167] gap-2 p-1 w-[110px] h-[38px]">
 			<svg
-				className="animate-spin h-5 w-5 text-[#eeb551]"
+				className="animate-spin h-5 w-5"
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
 				viewBox="0 0 24 24">

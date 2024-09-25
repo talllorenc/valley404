@@ -1,5 +1,4 @@
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
-import HomeButton from "@/components/UI/HomeButton";
+import HomeButton from "@/components/tl-ui/HomeButton";
 
 export default function NotFound() {
 	return (
@@ -9,13 +8,7 @@ export default function NotFound() {
 				<p className="font-medium text-xl">Whoops, that page is gone</p>
 			</div>
 
-			<div className="max-w-md mx-auto mt-4">
-				<HomeButton
-					href="/"
-					text="Go back to the home page"
-					icon={<FaRegArrowAltCircleRight />}
-				/>
-			</div>
+			<HomeButton />
 		</div>
 	);
 }

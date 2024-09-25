@@ -7,6 +7,7 @@ import useAuth from "@/hooks/useAuth";
 import MountedSpinner from "@/components/UI/MountedSpinner";
 import MenuUserModal from "@/components/Menu/MenuUser/MenuUserModal";
 import { useState } from "react";
+import { Button } from "@/components/tl-ui/button";
 
 const AuthButton = () => {
 	const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
@@ -41,11 +42,11 @@ const AuthButton = () => {
 		);
 	}
 	return (
-		<Link
-			href="/sign-in"
-			className="flex items-center gap-2 border border-dark dark:border-light hover:shadow-buttonDark dark:hover:shadow-buttonLight transition duration-200 px-4 py-1 rounded-xl">
-			<FaRegUser />
-			Join
+		<Link href="/sign-in">
+			<Button variant="outline" className="text-black dark:text-white">
+				Join
+				<FaRegUser className="ml-2" />
+			</Button>
 		</Link>
 	);
 };

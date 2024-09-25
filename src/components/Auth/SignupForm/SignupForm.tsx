@@ -4,8 +4,6 @@ import Link from "next/link";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { ISignup } from "@/types/auth";
-import { FaEnvelope, FaLock, FaUnlock, FaUser } from "react-icons/fa";
-import ButtonSubmit from "@/components/UI/ButtonSubmit";
 import { IoMdArrowDropright } from "react-icons/io";
 import FormErrors from "@/components/Auth/FormErrors/FormErrors";
 import { useState } from "react";

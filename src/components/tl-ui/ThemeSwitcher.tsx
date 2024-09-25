@@ -25,7 +25,7 @@ const ThemeSwitcher = () => {
 					isActive("light") ? "bg-[#eeb551]" : "bg-transparent"
 				}`}
 				onClick={() => setTheme("light")}>
-				<svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="size-5">
+				<svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className="size-5">
 					<g
 						stroke="currentColor"
 						stroke-linecap="round"
@@ -46,7 +46,7 @@ const ThemeSwitcher = () => {
 					isActive("system") ? "bg-white/20" : "bg-transparent"
 				}`}
 				onClick={() => setTheme("system")}>
-				<svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="size-5">
+				<svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className="size-5">
 					<path
 						fill="currentColor"
 						fill-opacity="0.15"
@@ -62,7 +62,7 @@ const ThemeSwitcher = () => {
 					isActive("dark") ? "bg-white/20" : "bg-transparent"
 				}`}
 				onClick={() => setTheme("dark")}>
-				<svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="size-5">
+				<svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className="size-5">
 					<path
 						fill="currentColor"
 						fill-opacity=".15"

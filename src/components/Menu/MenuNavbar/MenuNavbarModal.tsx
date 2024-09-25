@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from "framer-motion";
-import MenuItems from "@/components/Menu/MenuNavbar/MenuItems";
 
 type Props = {
 	isMenuOpen: boolean;
@@ -27,7 +26,6 @@ const MenuNavbarModal = ({ isMenuOpen, closeMenu }: Props) => {
 						exit={{ x: "-100%", opacity: 0 }}
 						onClick={(e) => e.stopPropagation()}
 						className="fixed top-[65px] left-0 z-50 max-w-xs w-full h-screen p-4 bg-light dark:bg-dark border-r border-dark/50 dark:border-light/50">
-						<MenuItems closeMenu={closeMenu} />
 					</motion.div>
 				</motion.div>
 			)}
